@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Flex Box, Listas y enlaces</title>
 </head>
 <!--Titulo pagina fase 2-->
 <header class="desing_header">
@@ -13,13 +13,15 @@
 </header>
 
 <body>
+    <!--Menu-->
     <nav class="desing_nav">
         <ul>
             <li>Inicio</li>
             <li>Temas
                 <ul>
-                    <li>Tema 1</li>
-                    <li>Tema 2</li> 
+                    <li>Flex Box</li>
+                    <li>Listas</li> 
+                    <li>Enlaces</li>
                 </ul>
             </li>
             <li>Recursos Digitales
@@ -39,30 +41,114 @@
     </nav>
     <section class="desing_section">
         <h2><u>Proposito del curso</u></h2>
+        <br>
         <pre>
-            El proposito del curso es tener las bases necesarias para poder desarrollar y crear paginas web basicas,
-            de esa manera como estudiantes se lográn tener las capacidades para desarrollar todo tipo de sitio web para el
-            entorno laboal
+    El proposito del curso es tener las bases necesarias para poder desarrollar y crear paginas web basicas,
+    de esa manera como estudiantes se lográn tener las capacidades para desarrollar todo tipo de sitio web para el
+    entorno laboral
         </pre>
     </section>
     <article>
+        <h2><u>Flex Box</u></h2>
+        <br>
+        <pre>
+    Es una de las propiedades de CSS display, que nos permite colocarle mejor diseño a nuestra pagina web.
+    El principal objetivo detras del diseño flexible es dar la capacidad de poder alterar
+    el ancho como el alto de los articulos que uno ha indicado.
+
+    Es un diseño apropiado especialmente para aplicaciones o diseños a pequeña escala.
+    Al trabajar con el Flexbox se necesita pensar en dos terminos de ejes, el eje principal y el eje cruzado.
+
+    <h4>Eje principal</h4>
+
+    Se define con flex-direction el cual tiene 4 valores que se le pueden asignar.
+    <ol>
+        <li>row</li>
+        <li>row-reverse</li>
+        <li>column</li>
+        <li>column-reverse</li>
+    </ol>
+    <img src="imagenes_fase2/flex_box_1.png" alt="Ejemplo 1">
+    Con ese ejemplo de desea mostrar las siguientes propiedades de Flexbox:
+
+    Con <u><b>justify-content</b></u> es una propiedad que nos ayuda alinear los items que deseamos arreglar.
+    Con eso se tienen los siguientes valores para poder realizar los adjuntes.
+
+
+
+    <ul>
+        <li>space-evenly</li>
+        <li>flex-start</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>space-around</li>
+        <li>space-between</li>
+
+    </ul>
+    Con las propiedades mostradas, se adjunta un video con mejor explicación dentro del desarrollo.
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0U3WzIE9R_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        </pre>
+        <br>
+        <h2><u>Listas</u></h2>
+        <br>
+        <pre>
+    Las listas nos permiten a los desarrolladores web poder agrupar un conjunto de varios elementos que tengan que ir en listas
+
+    En las listas tenemos dos tipos de listas 
+
+    <h4>Listas Ordenadas</h4>
+    Las listas ordenadas vienen numeradas las opciones las cuales se realiza con la etiqueta "ol"
+    Ejemplo: 
+
+    <img src="imagenes_fase2/lista_ordenada.png" alt="Lista Ordenada">
+    <h4>Listas Desordenasdas</h4>
+    Las listas desordenadas se puede realizan con la etiqueta "ul", dentro de esta misma se puede ver de la siguiente manera.
+    Ejemplo:
+
+    <img src="imagenes_fase2/lista_desordenada.png" alt="Lista Desordenada">
+
+    <h4>Listas de descripción</h4>
+
+    Para estas listas se tienen los siguientes termimos, primeramente se inicia con "dl" "dt" "dd", esto con el fin de mostrarlo de la siguiente manera.
+    <img src="imagenes_fase2/lista_descripcion.png" alt="Lista descripción">
+        </pre>
         
-        <p>aa
-            aqua
-            aa
-            aa
-            aa
-            aa
-            aa
-            aa
-            aa
-            
-        </p>
+        <br>
+        <h2><u>Enlaces</u></h2>
+        <br>
+        <pre>
+    Los enlaces se pueden encontrar en cualquier lugar dentro de internet, estos permiten la conexión entre varias paginas o para acceder a una pagina web.
+    La etiqueta para poder crear los enlaces es "a" dentro de eso se genera la siguiente "a href ="..." ", dentro de esas comillas se podra colocar enlace que uno desee.
+    Ejemplo: 
+
+    <img src="imagenes_fase2/enlace_unad.png" alt="Enlace UNAD">
+
+    Teniendo claro como generar los enlaces se tiene variedad de maneras para poderlos combiar y acceder a paginas web.
+    Como los siguientes.
+    <ul>
+        <li>Botones</li>
+        <li>Imagenes</li>
+    </ul>
+        </pre>
+<h2>Actividades</h2>
+<br>
+<h3>Actividad 1</h3>
+<br>
+<p>Para poder realizar la primera actividad, contará de enlaces, se accede desde:</p>
+<a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links1">Ejercicio 1 Enlaces</a>
+<br>
+<h3>Actividad 2</h3>
+<br>
+<p>Para poder rrealziar la segunda actividad, constará de listas, se accede desde:</p>
+<a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1">Ejercicio 2 Listas</a>
+<br>
+
     </article>
 </body>
 <footer class="desing_footer">
     <h4>Desarrollado por:</h4>
-    <br>
     <p><u><b>Correo:</b></u> jddelgadodio@unadvirtual.edu.co</p>
     <p><u><b>Skype:</b></u> live:juliandelgado33_2</p>
     <p><u><b>Fecha:</b></u> 24 de Febrero del 2022</p>
