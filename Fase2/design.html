@@ -11,10 +11,92 @@
 <header class="desing_header">
     <h1>Flex Box, Listas y enlaces</h1>
 </header>
+<style>
+*{
+    box-sizing: border-box;
+}
+p{
+    text-align: justify;
+}
+header{
+    background-color:  rgb(0, 190, 255);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    color:white;
+    border: groove;
+    border-color: rgb(0, 190, 255);
+}
+nav{
+    float: left;
+    width: 10%;
+    height: 100%;
+    background: rgb(240, 240, 240);
+    padding: 30px;
+    border: groove;
+    border-color: rgb(0, 190, 255);
+    font-size: 14px;
+    text-align: left;
+    
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+body{
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color:black;
+}
+section{
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    width: 90%;
+    float: left;
+    border: groove;
+    border-color: rgb(180, 180, 180);
+}
 
+
+article{
+    float: left;
+    width: 90%;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border: groove;
+    border-color: rgb(180, 180, 180);
+}
+section:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    background-color:  rgb(0, 190, 255);
+    padding: 10px;
+    text-align: left;
+    border: groove;
+    border-color: rgb(180, 180, 180);
+}
+@media (max-width: 400px) 
+{
+  nav, article 
+  {
+    width: 100%;
+    height: auto;
+  }
+}
+img{
+    border: groove;
+    border-color: rgb(0, 0, 0);
+}
+</style>
 <body>
     <!--Menu-->
-    <nav class="desing_nav">
+    <nav>
         <ul>
             <li>Inicio</li>
             <li>Temas
@@ -39,116 +121,130 @@
             <li>Acerca de (Autor)</li>
         </ul>
     </nav>
-    <section class="desing_section">
+    <!--Proposito del curso-->
+    <section>
         <h2><u>Proposito del curso</u></h2>
         <br>
-        <pre>
-    El proposito del curso es tener las bases necesarias para poder desarrollar y crear paginas web basicas,
-    de esa manera como estudiantes se lográn tener las capacidades para desarrollar todo tipo de sitio web para el
-    entorno laboral
-        </pre>
+        <p>
+            El proposito del curso es tener las bases necesarias para poder desarrollar y crear paginas web basicas,
+            de esa manera como estudiantes se lográn tener las capacidades para desarrollar todo tipo de sitio web para el
+            entorno laboral
+        </p>
     </section>
+    <!--Tema seleccionado como estudiante 4 Flex Box, Listas y enlaces-->
     <article>
+        <!--Flex Box-->
         <h2><u>Flex Box</u></h2>
         <br>
-        <pre>
-    Es una de las propiedades de CSS display, que nos permite colocarle mejor diseño a nuestra pagina web.
-    El principal objetivo detras del diseño flexible es dar la capacidad de poder alterar
-    el ancho como el alto de los articulos que uno ha indicado.
+        <p>
+            Es una de las propiedades de CSS display, que nos permite colocarle mejor diseño a nuestra pagina web.
+            El principal objetivo detras del diseño flexible es dar la capacidad de poder alterar
+            el ancho como el alto de los articulos que uno ha indicado.
 
-    Es un diseño apropiado especialmente para aplicaciones o diseños a pequeña escala.
-    Al trabajar con el Flexbox se necesita pensar en dos terminos de ejes, el eje principal y el eje cruzado.
+            Es un diseño apropiado especialmente para aplicaciones o diseños a pequeña escala.
+            Al trabajar con el Flexbox se necesita pensar en dos terminos de ejes, el eje principal y el eje cruzado.
+        </p>
+        <h4>Eje principal</h4>
 
-    <h4>Eje principal</h4>
+        <p>Se define con flex-direction el cual tiene 4 valores que se le pueden asignar.</p>
+        <ol>
+            <li>row</li>
+            <li>row-reverse</li>
+            <li>column</li>
+            <li>column-reverse</li>
+        </ol>
+        <!--Imagen-->
+        <img src="imagenes_fase2/flex_box_1.png" alt="Ejemplo 1">
+        <p>
+            Con ese ejemplo de desea mostrar las siguientes propiedades de Flexbox:
+            Con <u><b>justify-content</b></u> es una propiedad que nos ayuda alinear los items que deseamos arreglar.
+            Con eso se tienen los siguientes valores para poder realizar los adjuntes.
+        </p>
 
-    Se define con flex-direction el cual tiene 4 valores que se le pueden asignar.
-    <ol>
-        <li>row</li>
-        <li>row-reverse</li>
-        <li>column</li>
-        <li>column-reverse</li>
-    </ol>
-    <img src="imagenes_fase2/flex_box_1.png" alt="Ejemplo 1">
-    Con ese ejemplo de desea mostrar las siguientes propiedades de Flexbox:
 
-    Con <u><b>justify-content</b></u> es una propiedad que nos ayuda alinear los items que deseamos arreglar.
-    Con eso se tienen los siguientes valores para poder realizar los adjuntes.
+        <ul>
+            <li>space-evenly</li>
+            <li>flex-start</li>
+            <li>flex-end</li>
+            <li>center</li>
+            <li>space-around</li>
+            <li>space-between</li>
 
-
-
-    <ul>
-        <li>space-evenly</li>
-        <li>flex-start</li>
-        <li>flex-end</li>
-        <li>center</li>
-        <li>space-around</li>
-        <li>space-between</li>
-
-    </ul>
-    Con las propiedades mostradas, se adjunta un video con mejor explicación dentro del desarrollo.
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/0U3WzIE9R_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-        </pre>
-        <br>
-        <h2><u>Listas</u></h2>
-        <br>
-        <pre>
-    Las listas nos permiten a los desarrolladores web poder agrupar un conjunto de varios elementos que tengan que ir en listas
-
-    En las listas tenemos dos tipos de listas 
-
-    <h4>Listas Ordenadas</h4>
-    Las listas ordenadas vienen numeradas las opciones las cuales se realiza con la etiqueta "ol"
-    Ejemplo: 
-
-    <img src="imagenes_fase2/lista_ordenada.png" alt="Lista Ordenada">
-    <h4>Listas Desordenasdas</h4>
-    Las listas desordenadas se puede realizan con la etiqueta "ul", dentro de esta misma se puede ver de la siguiente manera.
-    Ejemplo:
-
-    <img src="imagenes_fase2/lista_desordenada.png" alt="Lista Desordenada">
-
-    <h4>Listas de descripción</h4>
-
-    Para estas listas se tienen los siguientes termimos, primeramente se inicia con "dl" "dt" "dd", esto con el fin de mostrarlo de la siguiente manera.
-    <img src="imagenes_fase2/lista_descripcion.png" alt="Lista descripción">
-        </pre>
+        </ul>
+        <p>
+          Con las propiedades mostradas, se adjunta un video con mejor explicación dentro del desarrollo.
+        </p>
+            <!--Se adjunta video desde YouTube-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0U3WzIE9R_0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
-        <br>
-        <h2><u>Enlaces</u></h2>
-        <br>
-        <pre>
-    Los enlaces se pueden encontrar en cualquier lugar dentro de internet, estos permiten la conexión entre varias paginas o para acceder a una pagina web.
-    La etiqueta para poder crear los enlaces es "a" dentro de eso se genera la siguiente "a href ="..." ", dentro de esas comillas se podra colocar enlace que uno desee.
-    Ejemplo: 
+    
+            <br>
+            <!--Listas-->
+            <h2><u>Listas</u></h2>
+            <br>
+            <p>
+                Las listas nos permiten a los desarrolladores web poder agrupar un conjunto de varios elementos que tengan que ir en listas
 
-    <img src="imagenes_fase2/enlace_unad.png" alt="Enlace UNAD">
+                En las listas tenemos dos tipos de listas 
+            </p>
+        <h4>Listas Ordenadas</h4>
+        <p> Las listas ordenadas vienen numeradas las opciones las cuales se realiza con la etiqueta "ol"
+            Ejemplo: 
+        </p>
+        <!--Imagen-->
+        <img src="imagenes_fase2/lista_ordenada.png" alt="Lista Ordenada">
+        <h4>Listas Desordenasdas</h4>
+        <p> Las listas desordenadas se puede realizan con la etiqueta "ul", dentro de esta misma se puede ver de la siguiente manera.
+        Ejemplo:
+        </p>
+        <!--Imagen-->   
+        <img src="imagenes_fase2/lista_desordenada.png" alt="Lista Desordenada">
+        
+        <h4>Listas de descripción</h4>
 
-    Teniendo claro como generar los enlaces se tiene variedad de maneras para poderlos combiar y acceder a paginas web.
-    Como los siguientes.
-    <ul>
-        <li>Botones</li>
-        <li>Imagenes</li>
-    </ul>
-        </pre>
-<h2>Actividades</h2>
-<br>
-<h3>Actividad 1</h3>
-<br>
-<p>Para poder realizar la primera actividad, contará de enlaces, se accede desde:</p>
-<a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links1">Ejercicio 1 Enlaces</a>
-<br>
-<h3>Actividad 2</h3>
-<br>
-<p>Para poder rrealziar la segunda actividad, constará de listas, se accede desde:</p>
-<a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1">Ejercicio 2 Listas</a>
-<br>
+        <p> Para estas listas se tienen los siguientes termimos, primeramente se inicia con "dl" "dt" "dd", esto con el fin de 
+            mostrarlo de la siguiente manera.
+        </p>
+        <!--Imagen-->
+        <img src="imagenes_fase2/lista_descripcion.png" alt="Lista descripción">
+            
+            
+            <br>
+            <h2><u>Enlaces</u></h2>
+            <br>
+            <p>
+                Los enlaces se pueden encontrar en cualquier lugar dentro de internet, estos permiten la conexión entre varias paginas o para acceder a una pagina web.
+                La etiqueta para poder crear los enlaces es "a" dentro de eso se genera la siguiente "a href ="..." ", dentro de esas comillas se podra colocar enlace que uno desee.
+                Ejemplo: 
+            </p>
+        <!--Imagen-->
+        <img src="imagenes_fase2/enlace_unad.png" alt="Enlace UNAD">
+
+        <p> 
+            Teniendo claro como generar los enlaces se tiene variedad de maneras para poderlos combiar y acceder a paginas web.
+            Como los siguientes.
+        </p>
+        <ul>
+            <li>Botones</li>
+            <li>Imagenes</li>
+        </ul>
+            
+            <h2>Actividades</h2>
+            <br>
+            <h3>Actividad 1</h3>
+            <br>
+            <p>Para poder realizar la primera actividad, contará de enlaces, se accede desde:</p>
+            <a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_links1">Ejercicio 1 Enlaces</a>
+            <br>
+            <h3>Actividad 2</h3>
+            <br>
+            <p>Para poder rrealziar la segunda actividad, constará de listas, se accede desde:</p>
+            <a href="https://www.w3schools.com/html/exercise.asp?filename=exercise_html_lists1">Ejercicio 2 Listas</a>
+            <br>
 
     </article>
 </body>
-<footer class="desing_footer">
-    <h4>Desarrollado por:</h4>
+<footer class ="Pie_Pagina";
     <p><u><b>Correo:</b></u> jddelgadodio@unadvirtual.edu.co</p>
     <p><u><b>Skype:</b></u> live:juliandelgado33_2</p>
     <p><u><b>Fecha:</b></u> 24 de Febrero del 2022</p>
