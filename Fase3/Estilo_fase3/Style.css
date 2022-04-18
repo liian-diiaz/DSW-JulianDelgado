@@ -114,10 +114,9 @@ aside{
     box-shadow: 0 0 ,5rem rgb(0, 0, 0, 0.42);
 }
 /* Fin aside */
-.proposito > p{
-    padding: 10px;
-    width: 95%;
-    float: left;
+.proposito {
+    padding: 5%;
+    width: auto;
 }
 .proposito > h2{
     text-align: center;
@@ -125,10 +124,9 @@ aside{
 .introduccion > h2{
     text-align: center;
 }
-.introduccion > p{
-    padding: 10px;
-    width: 95%;
-    float: left;
+.introduccion{
+    padding: 5%;
+    width: auto;
 }
 /* Tema 1 Flex box */
 .flex_box > h2{
