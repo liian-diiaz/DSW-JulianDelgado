@@ -1,0 +1,206 @@
+
+*{
+    box-sizing: border-box;
+}
+p{
+    text-align: justify;
+}
+header{
+    background-color:  #41729F;
+    padding: 20px;
+    text-align: center;
+    font-family:'Arial';
+    font-size: 30px;
+    color:white;
+    border: groove;
+    border-color: rgb(255, 255, 255);
+}
+/* Menu */
+
+nav{
+    width: auto;
+}
+body{
+    font-family: 'Verdana';
+    background-color: #274472;
+    font-size: 16px;
+    color:black;
+}
+.home{
+    width: 100%;    
+}
+section{
+    background-color:#ffffff;
+    border-color: rgb(255, 255, 255);
+    padding: 10px;
+    width: auto;
+    float: left;
+    border: groove;
+}
+
+/*Inicio aside de las redes sociales de la universidad*/
+aside{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+}
+.icon{
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+.icon-facebook2{
+    background-color: #2e406e;
+}
+.icon-twitter{
+    background-color: #339dc5;
+}
+.icon-instagram{
+    background-color: #fc901d;
+}
+.icon-youtube{
+    background-color: #e93028;  
+}
+.icon:first-child{
+    border-radius: 1rem 0 0 0;
+}
+.icon:last-child{
+    border-radius: 0 0 0 1rem;
+}
+.icon:hover{
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 ,5rem rgb(0, 0, 0, 0.42);
+}
+/* Fin aside */
+.proposito {
+    padding: 5%;
+    width: auto;
+}
+.proposito > h2{
+    text-align: center;
+}
+.introduccion > h2{
+    text-align: center;
+}
+.introduccion{
+    padding: 5%;
+    width: auto;
+}
+/* Tema 1 Flex box */
+.flex_box > h2{
+    text-align: center;
+}
+.flex_box {
+    padding: 5%;
+    width: 100%;
+}
+/* Tema 2 Listas */
+.listas h2{
+    text-align: center;
+    padding: 5px;
+}
+.listas {
+    
+    padding: 0% 5%;
+}
+.listas h4{
+    padding-left: 5%;
+    width: 95%
+}
+/* Tema 3 Enlaces */
+.enlaces h2{
+    padding: 2px;
+    text-align: center;
+}
+.enlaces {
+    padding:  5% ;
+    
+}
+.enlaces ul {
+    padding-left: 10%;
+}
+/* Recurso 1 */
+.recurso1 h2{
+    text-align: center;
+}
+.recurso1 > p{
+    padding: 5%;
+    float: left;
+    width: 95%;
+}
+.video_recurso1{
+    text-align: center;
+}
+/* Recurso 2 */
+.recurso2 h2{
+    text-align: center;
+}
+.recurso2 p{
+    padding: 5%;
+    width: 95%;
+}
+.recurso2 h3{
+    padding-left: 100px;
+}
+.recurso2_tabla{
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Actividad 1 Flex Box*/
+
+.encuesta1{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+/* Autor */
+.autor{
+    width: auto;
+    padding: 10px;
+}
+.autor h2{
+    text-align: center;
+}
+.autor table{
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.autor p{
+    padding: 10px;
+    width: 95%;
+}
+/* Pie de pagina */
+footer{
+    background-color:#274472;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+    
+}
+
+footer img{
+    float: left;
+    width: 100px;
+    height: 90px;
+    border: none;
+}
+img{
+    border: groove;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgb(236, 179, 101);
+}
